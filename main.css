@@ -1,0 +1,52 @@
+:root {
+    --overkill-red: #de0724;
+    --regen-pink: #F50F84;
+    --too-much-water: #0F0F84;
+    --black: #000000;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--black);
+    font-family: mulish;
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 4.2em;
+}
+
+h2 {
+    font-family: cardo;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: mulish;
+    font-weight: 1000;
+    font-size: 2em;
+}
+
+h4 {
+    font-family: mulish;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: mulish;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
