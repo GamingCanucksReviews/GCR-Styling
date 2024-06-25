@@ -1,22 +1,26 @@
 :root {
-    --overkill-red: #de0724;
-    --regen-pink: #F50F84;
-    --too-much-water: #0F0F84;
+    --overkill: #de0724;
+    --regen: #F50F84;
+    --water: #0F0F84;
     --black: #000000;
-
+    --gradient: linear-gradient(135deg, rgba(222,7,36,1) 0%, rgba(245,15,132,1) 100%);
+    --gradient-hover: linear-gradient(135deg, rgb(194, 7, 32) 0%, rgb(209, 12, 114) 100%);
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: mulish;
+    
 }
 
 * {
-    margin: 0;
+    margin: 0 5%;
     padding: 0;
     line-height: 1.5;
 }
+/*TEXT AND FONTS*/
 
 h1 {
     color: var(--black);
@@ -50,3 +54,42 @@ p {
     font-size: 1em;
     margin-bottom: 1em;
 }
+
+/* BUTTONS */
+
+.btn-primary {
+    color: white;
+    padding: 1em 3em;
+    background: var(--gradient);
+    border-radius: 100px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: var(--gradient-hover);
+    text-decoration: underline;
+}
+
+.btn-primary-rev {
+    color: black;
+    padding: 1em 3em;
+    background: white;
+    border-radius: 100px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.btn-primary-rev:hover {
+    background: #eeeeee;
+    text-decoration: underline;
+}
+
+/*BACKGROUNDS AND SPACING*/
+
+.gradient-bg {
+    background: var(--gradient);
+    padding: 5em 0;
+    margin-top: 2em;
+}
+
